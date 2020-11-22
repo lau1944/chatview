@@ -2,6 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+
+    viewBinding {
+        enabled = true
+    }
+
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
