@@ -38,9 +38,8 @@
 
             <TextView
                 android:id="@+id/time"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10:00am"
                 android:paddingVertical="5dp"
                 android:paddingHorizontal="10dp"
                 android:textSize="8sp" />
@@ -66,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:gravity="center"
-            android:paddingHorizontal="20dp"
+            android:paddingHorizontal="5dp"
             android:textSize="14sp"
             android:textColor="@android:color/black" />
 
