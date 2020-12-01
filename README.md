@@ -57,7 +57,7 @@ adapter.addMessageToList(ChatMessage(false, "new message", "jimmy",
 ```
 
 
- Add Observer To Adapter
+### Add Observer To Adapter
  
  Whenever a new message is added, observer callback would be notified
 ```kotlin
@@ -68,4 +68,9 @@ adapter.addMessageToList(ChatMessage(false, "new message", "jimmy",
 
         })
 ```
+
+
+This package is mainly for my own project, it only supports text only view
+
+If you want more features, like include photos, videos,etc... Welcome to put on issues, I would work on it 😀
 
