@@ -37,7 +37,8 @@
                 android:gravity="end"
                 android:paddingTop="5dp"
                 android:paddingHorizontal="10dp"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true"/>
 
             <TextView
                 android:id="@+id/time"

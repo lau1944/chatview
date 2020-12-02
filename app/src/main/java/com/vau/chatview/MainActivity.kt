@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             override fun update(newMessage: ChatMessage) {
                 Log.d("DemoActivity", newMessage.message.toString())
             }
-
         })
 
         adapter.addMessageToList(ChatMessage(false, "new message", "jimmy",
