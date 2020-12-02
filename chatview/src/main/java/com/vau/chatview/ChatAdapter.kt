@@ -75,6 +75,10 @@ class ChatAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         notifyObserver(message)
     }
 
+    fun addAll(list: List<ChatMessage>) {
+        (list as ArrayList).addAll(list)
+    }
+
     fun notifyObserver(message: ChatMessage) {
         observers?.forEach { it ->
             it.update(message)
