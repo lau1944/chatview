@@ -21,7 +21,7 @@ allprojects {
 
 ```groovy
   dependencies {
-      implementation 'com.github.lau1944:chatview:1.0'
+      implementation 'com.github.lau1944:chatview:1.0.1'
   }
 ```
 
