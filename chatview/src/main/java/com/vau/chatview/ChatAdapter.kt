@@ -27,7 +27,6 @@ class ChatAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         fun onBind(item: ChatMessage) {
             binding.message.text = item.message
             binding.time.text = item.date
-            Log.d("chatView", binding.message.text.toString())
         }
     }
 
@@ -77,11 +76,12 @@ class ChatAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     fun addAll(list: List<ChatMessage>) {
         (list as ArrayList).addAll(list)
+        notifyObserver(list)
     }
 
-    fun notifyObserver(message: ChatMessage) {
+    fun notifyObserver(data: Any) {
         observers?.forEach { it ->
-            it.update(message)
+            it.update(data)
         }
     }
 
